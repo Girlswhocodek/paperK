@@ -56,6 +56,16 @@ def comparar_tiempos():
     print(f"Diferencia:           {abs(tiempo1 - tiempo2):.8f} segundos")
     print(f"¿Resultados iguales?  {resultado1 == resultado2}")
     
+    print("\n" + "=" * 40)
+    print("MEDICIÓN CON %timeit")
+    print("=" * 40)
+    
+    print("Método exponenciación:")
+    %timeit metodo_exponenciacion()
+    
+    print("Método bucle for:")
+    %timeit metodo_for_loop()
+    
     return tiempo1, tiempo2
 
 def mostrar_resultados():
